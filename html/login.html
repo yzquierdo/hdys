@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body, ul, li, a, img, h1, h4, form, input{
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            .top, .bottom{
+                width: 1200px;
+                margin: 0 auto;
+            }
+
+
+            .top{
+                background-color: #F5F5F5;
+                height: 29px;
+                border-bottom: 1px solid #DDDDDD;
+                font-size: 12px;
+            }
+            .top_o1, .top_o3{
+                float: left;
+                line-height: 29px;
+            }
+            .top ul li{
+                float: left;
+            }
+            .top_o1{
+                box-sizing: border-box;
+                padding: 0 6px;
+            }
+            .top_o1 li a{
+                color: #565656;
+            }
+            .top_o1 .top_c1{
+                padding-right: 18px;
+            }
+            .top_o1 .top_c1 a{
+                color: #FF004B;
+            }
+            .top div{
+                float: left;
+                line-height: 29px;
+            }
+            .top_o2{
+                margin-left: 596px;
+            }
+            .top_o3{
+                box-sizing: border-box;
+                padding: 0 10px;
+            }
+            .top_o3 .top_c2{
+                margin-left: 4px;
+                margin-right: 10px;
+            }
+            .top_o3 li a{
+                color: #565656;
+            }
+            .top_o3 .top_c2 a{
+                color: #C80A28;
+            }
+            .top_o4{
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+            }
+            .top_o4 li{
+                margin-top: 4px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            .top_o4 .top_x1{
+                height: 20px;
+                display: block;
+                box-sizing: border-box;
+                border-left: 1px solid #DDDDDD;
+                padding-left: 10px;
+                padding-right: 0;
+            }
+            .top_o4 .top_x2{
+                background: url(../images/login/icon.png) no-repeat -28px -23px;
+                box-sizing: border-box;
+                padding-left: 22px;
+                padding-right: 0;
+            }
+            .top_o4 li a{
+                color: #565656;
+            }
+
+
+            .bottom{
+                height: 1096px;
+            }
+            .bottom .bot_o1{
+                height: 119px;
+            }
+            .bottom .bot_o1 .bot_imga1{
+                width: 355px;
+                height: 97px;
+                float: left;
+                margin-top: 8px;
+                background: url(../images/login/logo_new.png) 0 5px no-repeat;
+                font-family: "微软雅黑";
+            }
+            .bottom .bot_o1 .bot_o1a1{
+                float: left;
+                width: 540px;
+                height: 62px;
+                margin-top: 28px;
+            }
+            .bottom .bot_o1 .bot_o1a1 form{
+                display: block;
+                margin-left: 46px;
+            }
+            .bottom .bot_o1 .bot_o1a1 .bot_txt1{
+                width: 402px;
+                color: #c80a28;
+                outline: none;
+                border: none;
+                line-height: 20px;
+                padding-top: 3px;
+                text-indent: 5px;
+                font-size: 14px;
+                float: left;
+            }
+            .bottom .bot_o1 .bot_o1a1 .bot_btn1{
+                width: 85px;
+                background: #c80a28;
+                float: left;
+                font: 16px/30px 'microsoft yahei';
+                color: #fff;
+                letter-spacing: 4px;
+                cursor: pointer;
+                border: none;
+                height: 32px;
+            }
+            .bottom .bot_o1 .bot_o1a1 ul{
+                display: block;
+                margin-left: 46px;
+            }
+            .bottom .bot_o1 .bot_o1a1 ul li{
+                float: left;
+            }
+            .bottom .bot_o1 .bot_imga2{
+                margin-left: 119px;
+                float: left;
+                height: 116px;
+            }
+            .bottom .bot_o1 .bot_imga2 img{
+                width: 100px;
+                height: 100px;
+            }
+            .bottom .bot_o1 .bot_imga2 .bot_txt2{
+                font-size: 10px;
+                margin-top: 0;
+            }
+
+            .bottom .bot_o2{
+                height: 33px;
+                line-height: 33px;
+            }
+            .bottom .bot_o2 li{
+                float: left;
+            }
+
+            .bottom .bot_o3{
+                height: 500px;
+            }
+            .bottom .bot_o3 .bot_imga2{
+                margin-left: 51px;
+                margin-top: 73px;
+                margin-right: 51px;
+                float: left;
+            }
+            .bottom .bot_o3 .bot_login{
+                width: 666px;
+                height: 470px;
+                border-left: 1px dashed #DDDDDD;
+                float: left;
+                margin-top: 20px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form{
+                width: 302px;
+                height: 332px;
+                padding: 20px 40px 20px 40px;
+                box-shadow: 2px 1px 5px rgba(0,0,0,0.4);
+                margin-left: 78px;
+                margin-top: 40px;
+                position: relative;
+            }
+            .bottom .bot_o3 .bot_login .bot_form .bot_t1{
+                width: 100%;
+                height: 30px;
+                font-size: 19px;
+                border-bottom: solid 1px #eee;
+                color: #666;
+                font-weight: 500;
+                margin-bottom: 51px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form .login_txt1{
+                width: 208px;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form .login_txt2{
+                width: 122px;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form .bot_name span{
+                width: 180px;
+                height: 42px;
+                background-color: #F0F0F0;
+                display: inline-block;
+                font-size: 15px;
+                display: none;
+                position: absolute;
+                left: 110px;
+                top: 150px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form .bot_password span{
+                width: 180px;
+                height: 42px;
+                background-color: #F0F0F0;
+                display: inline-block;
+                font-size: 15px;
+                display: none;
+                position: absolute;
+                left: 110px;
+                top: 150px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form .bot_btn1{
+                width: 139px;
+                height: 36px;
+                background-color: #C11533;
+                color: white;
+                border: 0;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form ul li{
+                float: left;
+                box-sizing: border-box;
+                padding: 0 8px;
+            }
+            .bottom .bot_o3 .bot_login .bot_form form ul .bot_l1{
+                border-right: 1px solid black;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm{
+                margin-top: 26px;
+                margin-left: 80px;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm div{
+                float: left;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm .bot_med2{
+                float: left;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm .bot_med2 span{
+                float: left;
+                width: 97px;
+                height: 29px;
+                margin-right: 10px;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm .bot_med2 .bot_qq{
+                background: url("../images/login/NEWS_login.png") no-repeat 0 -528px;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm .bot_med2 .bot_wb{
+                background: url("../images/login/NEWS_login.png") no-repeat -111px -528px;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm .bot_med2 .bot_xl{
+                background: url("../images/login/NEWS_login.png") no-repeat -222px -528px;
+            }
+            .bottom .bot_o3 .bot_login .bot_loginm .bot_med2 .bot_zfb{
+                background: url("../images/login/NEWS_login.png") no-repeat -333px -528px;
+            }
+
+            .bottom .bot_foot{
+                height: 440px;
+            }
+            .bottom .bot_foot .foot_gray{
+                height: 145px;
+                background-color: #FAFAFA;
+                overflow: hidden;
+            }
+            .bottom .bot_foot .foot_gray ul{
+                width: 110px;
+                height: 115px;
+                margin-left: 77px;
+                margin-right: 51px;
+                margin-top: 15px;
+                float: left;
+            }
+            .bottom .bot_foot .foot_gray ul li{
+                line-height: 20px;
+                font-size: 10px;
+                box-sizing: border-box;
+                padding-left: 8px;
+            }
+            .bottom .bot_foot .foot_gray ul li a{
+                color: black;
+            }
+            .bottom .bot_foot .foot_gray ul .gray_o1{
+                width: 110px;
+                height: 24px;
+                background: url(../images/login/footer01.png) no-repeat;
+                margin-bottom: 6px;
+                padding-left: 0;
+            }
+            .bottom .bot_foot .foot_img1{
+                background: url("../images/login/feature1.png") no-repeat top center;
+                margin: 20px 0;
+                height: 95px;
+                width: 100%;
+            }
+            .bottom .bot_foot .foot_black{
+                width: 100%;
+                margin: 5px auto;
+                height: 30px;
+                background: #393939;
+                color: #fff;
+                font: 12px/32px 'Microsoft YaHei';
+                box-sizing: border-box;
+                padding-left: 280px;
+                line-height: 16px;
+            }
+            .bottom .bot_foot .foot_black li{
+                height: 16px;
+                padding: 0 20px;
+                float: left;
+                font-size: 14px;
+                border-left: 1px solid white;
+                margin-top: 8px;
+            }
+            .bottom .bot_foot .foot_black .black_o1{
+                border-left: 0;
+            }
+            .bottom .bot_foot .foot_black li a{
+                color: white;
+            }
+
+            .bottom .bot_foot .foot_aside{
+                margin: 15px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                padding-left: 100px;
+                font-size: 12px;
+                text-align: center;
+            }
+            .bottom .bot_foot .foot_aside .aside_right{
+                margin-top: 15px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/login.min.css">
+        <script type = "text/javascript" src = "js/require.js" async = "true" defer data-main = "js/main"></script>
+    </head>
+    <body>
+        <div class = "top">
+            <ul class = "top_o1">
+                <li class = "top_c1"><a href="http://www.handu.com/">返回首页</a></li>
+                <li><a href="">收藏网站</a></li>
+            </ul>
+            <div class = "top_o2">您好，欢迎光临韩都衣舍！</div>
+            <ul class = "top_o3">
+                <li><a href="">登录</a></li>
+                <li class = "top_c2"><a href="">注册</a></li>
+                <li><a href="">购物车</a></li>
+            </ul>
+            <ul class = "top_o4">
+                <li class = "top_x1"><a href="">在线客服</a></li>
+                <li><a href="">帮助中心</a></li>
+                <li class = "top_x2"><a href="">网站导航</a></li>
+            </ul>
+        </div>
+        <div class = "bottom">
+            <div class = "bot_o1">
+                <div class = "bot_imga1"></div>
+                <div class = "bot_o1a1">
+                    <form action="">
+                        <input type="text" value = "初冬杀手锏 必备吸睛卫衣" class = "bot_txt1" />
+                        <input type="submit" value = "搜索" class = "bot_btn1"/>
+                    </form>
+                    <ul>
+                        <li>韩风女装</li>
+                        <li>韩风女装</li>
+                        <li>韩风女装</li>
+                        <li>韩风女装</li>
+                        <li>韩风女装</li>
+                        <li>韩风女装</li>
+                    </ul>
+                </div>
+                <div class = "bot_imga2">
+                    <img src="../images/login/ewm.png" />
+                    <div class = "bot_txt2">扫码领50元优惠券</div>
+                </div>
+            </div>
+            <ul class = "bot_o2">
+                <li class = "bot_c1">全部商品分类</li>
+                <li>韩都咨询</li>
+                <li>韩都咨询</li>
+                <li class = "bot_c2">韩都咨询</li>
+                <li>韩都咨询</li>
+            </ul>
+            <div class = "bot_o3">
+                <div class = "bot_imga2">
+                    <img src="../images/login/410-290.png" alt="">
+                </div>
+                <div class = "bot_login">
+                    <div class = "bot_form">
+                        <h1 class = "bot_t1">用户登录</h1>
+                        <form action="">
+                            <div class = "bot_name">用户名：
+                                <input type="text" class = "login_txt1" placeholder = "邮箱地址/手机号" /><br />
+                                <span>此链接不安全。在此页面输入的登录信息可以被窃取。</span>
+                            </div>
+                            <div class = "bot_password">密码：
+                                <input type="password" class = "login_txt1" />
+                                <span>此链接不安全。在此页面输入的登录信息可以被窃取。</span>
+                            </div>
+                            <div class = "bot_code">验证码：
+                                <input type="text" class = "login_txt2" />
+                            </div>
+                            <input type = "submit" class = "bot_btn1" value = "立即登录" />
+                            <input type="checkbox" class = "bot_ch1">保存登录信息
+                            <ul>
+                                <li class = "bot_l1">注册</li>
+                                <li>忘记密码？</li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class = "bot_loginm">
+                        <div class = "bot_med1">其他登录方式：</div>
+                        <div class = "bot_med2">
+                            <a href=""><span class = "bot_qq"></span></a>
+                            <a href=""><span class = "bot_wb"></span></a>
+                            <a href=""><span class = "bot_xl"></span></a>
+                            <a href=""><span class = "bot_zfb"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "bot_foot">
+                <div class = "foot_gray">
+                    <ul>
+                        <li class = "gray_o1"></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                    </ul>
+                    <ul>
+                        <li class = "gray_o1"></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                    </ul>
+                    <ul>
+                        <li class = "gray_o1"></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                    </ul>
+                    <ul>
+                        <li class = "gray_o1"></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                    </ul>
+                    <ul>
+                        <li class = "gray_o1"></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                    </ul>
+                    <ul>
+                        <li class = "gray_o1"></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                        <li><a href="">用户注册</a></li>
+                    </ul>
+                </div>
+                <div class = "foot_img1"></div>
+                <ul class = "foot_black">
+                    <li class = "black_o1"><a href="">首页</a></li>
+                    <li><a href="">品牌故事</a></li>
+                    <li><a href="">品牌故事</a></li>
+                    <li><a href="">品牌故事</a></li>
+                    <li><a href="">品牌故事</a></li>
+                    <li><a href="">品牌故事</a></li>
+                    <li><a href="">品牌故事</a></li>
+                </ul>
+                <div class = "foot_aside">
+                    <span class = "aside_left">
+                        <img src="../images/login/copyright.gif">鲁ICP备14003322号-2 © 2015-2017 handu.com All Rights Reserved.
+                        <a href="">
+                        <img src="../images/login/beiantubiao.png">
+                        <span class = "left_o1">鲁公网安备 37010202000113号</span>
+                        </a>
+                        韩都衣舍电子商务集团股份有限公司，禁止非法复制
+                        <img src="../images/login/pic.gif" alt="">
+                    </span><br />
+                    <span class = "aside_right">
+                        <img src="../images/login/zxmbutton02_sy.jpg" alt="">
+                        <a href=""><img src="../images/login/zxmbutton05_sy.jpg" alt=""></a>
+                        <img src="../images/login/cctv.png" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

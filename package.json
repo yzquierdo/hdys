@@ -1,0 +1,35 @@
+{
+  "name": "handouyishe",
+  "version": "1.0.0",
+  "description": "handuyishe",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "login",
+    "logon",
+    "index",
+    "commodity",
+    "order"
+  ],
+  "author": "K",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass-china": "^3.1.0",
+    "gulp-scss": "^1.4.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass-china": "^3.1.0",
+    "gulp-scss": "^1.4.0"
+  }
+}
